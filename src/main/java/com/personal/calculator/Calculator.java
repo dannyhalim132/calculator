@@ -29,7 +29,7 @@ public class Calculator
 				System.out.println("result :" + Calculator.calculate(input));
 			}catch(Exception e)
 			{
-				System.out.println(e.getMessage());
+				System.out.println("Unable to process equation :"+e.getMessage());
 			}
 		}
 

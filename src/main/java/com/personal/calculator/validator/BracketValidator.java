@@ -30,7 +30,7 @@ public class BracketValidator
 						break;
 					case CLOSE_BRACKET:
 						if (bracketStack.isEmpty())
-							throw new Exception("invalid bracketing format [)] :" + index);
+							throw new Exception("invalid bracketing format [)] at index:" + (index+1));
 						else
 							bracketStack.pop();
 						break;

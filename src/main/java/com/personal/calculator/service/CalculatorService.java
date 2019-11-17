@@ -15,7 +15,7 @@ public class CalculatorService
 		this.equations = equations;
 	}
 
-	public String calculate()
+	public String calculate() throws Exception
 	{
 		try
 		{
@@ -26,8 +26,7 @@ public class CalculatorService
 			return result;
 		}catch(Exception e)
 		{
-			e.printStackTrace();
-			return "Exception!";
+			throw e;
 		}
 	}
 }
